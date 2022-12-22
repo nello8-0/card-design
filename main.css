@@ -1,0 +1,196 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color:#eee;
+    margin: 55px auto;
+}
+
+.card {
+    background-color: hsl(32, 52%, 82%);
+    width: 1200px;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgb(201, 197, 197);
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+img {
+    width: 250px;
+    height: 400px;
+    border-radius: 5px 0 0px 5px;
+}
+
+.contain {
+    width: 250px;
+    padding: 30px;
+}
+
+.contain h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(126, 126, 126);
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.contain h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 26px;
+    /* line-height: 1.5; */
+}
+
+.contain p {
+    font-size: 14px;
+    color: rgb(126, 126, 126);
+    line-height: 1.5;
+}
+
+.contain .price {
+    font-size: 25px;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.contain del {
+    font-family: normal;
+    color: rgb(126, 126, 126);
+    font-size: 14px;
+}
+
+.contain button {
+    border: none;
+    width: 100%;
+    padding: 11px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 13px 0;
+    transition: .3s;
+}
+
+.contain button:hover {
+    background-color: hsl(157, 35%, 19%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+    line-height: 1.5;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: hsl(157, 43%, 12%);
+}
+
+@media (max-width : 375px) {
+    .body {
+        max-width : 100%;
+        max-height: 100vh;
+        /* margin: 0; */
+        background-color: transparent;    
+    }
+    .card {
+        width: 375px;
+        /* height: max-content; */
+        box-shadow: none;
+    }
+    .container {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        max-height: max-content;
+        max-width: max-content;
+        height: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #fff;
+        height: 504px;
+        width: 255px;
+        box-shadow: 0px 0px 10px 0px rgb(201, 197, 197);
+    }
+    html {
+        background-color: hsl(32, 52%, 82%);
+    }
+    .contain {
+        padding: 8px;
+        gap: 1px;
+    }
+    img {
+        width : 100%;
+        height: 175px;
+    }
+
+   .contain h1 {
+        font-size: 23px;
+    }
+     .contain h3 {
+        font-size: 14px;
+    }
+   .contain  p {
+        font-size: 14px;
+    }
+
+    .contain .price {
+        font-size: 14px;
+    }
+
+    .contain del {
+        font-size: 11px;
+    }
+
+    .contain button {
+        padding: 9px;
+        font-size: 12px;
+        /* margin: 8px; */
+    }
+    .attribution {
+        font-size: 10px;
+    }
+     .attribution a {
+        font-size: 11px;
+    }
+    
+}
+
+
